@@ -35,7 +35,7 @@ Este projeto visa criar uma plataforma de drone autônomo utilizando o **Drone F
 O sistema é baseado no **PX4** como controlador de voo e **ROS2** como framework de comunicação para integração dos diversos sensores e algoritmos. A **Jetson Xavier** é usada para processamento pesado, como o processamento de imagens da **ZED Mini** para a geração de mapas em 3D e o algoritmo de SLAM.
 
 <p align="center">
-  <img src="./images/schematic.png" alt="Arquitetura Esquemático" width="450">
+  <img src="./images/schematic.png" alt="Arquitetura Esquemático" width="500">
 </p>
 
 ## **Componentes Utilizados**
@@ -115,3 +115,6 @@ Para rodar o ROS2, PX4 e os pacotes necessários dentro de um container Docker, 
 
    # Configurar entrada de vídeo para a Logitech
    RUN apt-get
+
+
+
