@@ -9,7 +9,7 @@ Este repositório contém o código e as instruções para configurar e operar u
 ## Demo do Projeto
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=DD4cZKjU3OE">
+  <a href="https://youtu.be/DD4cZKjU3OE?si=M-d3tPuX8iqx91zh&t=67">
     <img src="https://img.youtube.com/vi/DD4cZKjU3OE/0.jpg" alt="Assista ao vídeo no YouTube" width="400">
   </a>
 </p>
