@@ -4,7 +4,7 @@ Este repositório contém o código e as instruções para configurar e operar u
 
 
 <p align="center">
-  <img src="./images/drone.png" alt="Drone F450" width="300">
+  <img src="./images/drone.png" alt="Drone F450" width="450">
 </p>
 
 ## **Sumário**
@@ -29,7 +29,9 @@ Este projeto tem como objetivo criar uma plataforma de drone autônomo utilizand
 
 O sistema é baseado no **PX4** como controlador de voo e **ROS2** como framework de comunicação para integração dos diversos sensores e algoritmos. A **Jetson Xavier** é usada para processamento pesado, como o processamento de imagens da **ZED Mini** para a geração de mapas em 3D e o algoritmo de SLAM.
 
-![Esquemático do Sistema](./images/schematic.png)
+<p align="center">
+  <img src="./images/schematic.png" alt="Arquitetura Esquemático" width="450">
+</p>
 
 ## **Componentes Utilizados**
 
