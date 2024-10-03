@@ -11,7 +11,7 @@ Este repositório contém o código e as instruções para configurar e operar u
 
 [![Assista ao vídeo no YouTube](https://img.youtube.com/vi/xxxxxx/0.jpg)](https://www.youtube.com/watch?v=DD4cZKjU3OE)
 
-Clique na imagem acima para ver o projeto em ação.
+Link acima para ver o projeto em ação, na competição SARC Barinet (Proposito detectar regiões com possíveis macrófita, são as plantas aquáticas que podem ser vistas a olho nu e tem um papel importante nos ecossistemas aquáticos de riosimportante nos ecossistemas aquáticos de rios).
 
 ## **Sumário**
 
