@@ -8,7 +8,11 @@ Este repositório contém o código e as instruções para configurar e operar u
 
 ## Demo do Projeto
 
-[![Assista ao vídeo no YouTube](https://img.youtube.com/vi/DD4cZKjU3OE/0.jpg)](https://www.youtube.com/watch?v=DD4cZKjU3OE)
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=DD4cZKjU3OE">
+    <img src="https://img.youtube.com/vi/DD4cZKjU3OE/0.jpg" alt="Assista ao vídeo no YouTube" width="400">
+  </a>
+</p>
 
 Assista ao vídeo acima para ver o projeto em ação na competição SARC Barinet. O propósito é detectar regiões com possíveis macrófitas, plantas aquáticas importantes para ecossistemas de rios.
 
