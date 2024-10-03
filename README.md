@@ -7,6 +7,12 @@ Este repositório contém o código e as instruções para configurar e operar u
   <img src="./images/drone.png" alt="Drone F450" width="450">
 </p>
 
+## Demo do Projeto
+
+[![Assista ao vídeo no YouTube](https://img.youtube.com/vi/xxxxxx/0.jpg)](https://www.youtube.com/watch?v=DD4cZKjU3OE)
+
+Clique na imagem acima para ver o projeto em ação.
+
 ## **Sumário**
 
 - [Visão Geral](#visão-geral)
