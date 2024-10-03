@@ -45,7 +45,7 @@ O sistema é baseado no **PX4** como controlador de voo e **ROS2** como framewor
 ## **Componentes Utilizados**
 
 - **Drone F450 Frame**: Quadro do drone.
-- **PX4 Autopilot**: Sistema de piloto automático para controle de voo.
+- **Pixhawk 4**: Sistema de piloto automático para controle de voo.
 - **ROS2 (Robot Operating System 2)**: Framework para integração de sistemas e sensores.
 - **Jetson Xavier**: Computador de bordo para processamento de algoritmos de visão e IA.
 - **ZED Mini**: Câmera estereoscópica para mapeamento e navegação em 3D.
