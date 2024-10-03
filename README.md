@@ -67,7 +67,9 @@ Antes de começar, certifique-se de que você atendeu aos seguintes requisitos:
 
 Para rodar o ROS2, PX4 e os pacotes necessários dentro de um container Docker, siga os passos abaixo:
 
-# Usando a imagem oficial do Jetson Xavier
+1. **Usando a imagem oficial do Jetson Xavier**:
+```bash
+
 FROM nvcr.io/nvidia/l4t-base:r35.1.0
 
 # Instalar dependências do ROS 2
