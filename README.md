@@ -62,19 +62,19 @@ Antes de começar, certifique-se de que você atendeu aos seguintes requisitos:
 
 ## **Instalação**
 
-# Construa a imagem Docker para PX4 e ROS2:
+## Construa a imagem Docker para PX4 e ROS2:
 
 ```bash
 docker build -t px4_ros2_jetson .
 ```
 
-# Execute o container:
+## Execute o container:
 
 ```bash
 docker run -it --privileged px4_ros2_jetson /bin/bash
 ```
 
-# Configuração do PX4
+## Configuração do PX4
 
 Compile o código PX4:
 
@@ -90,7 +90,7 @@ sudo apt install ros-foxy-mavros ros-foxy-mavros-extras
 
 Configurar o drone no QGroundControl para iniciar as missões.
 
-# Configuração do ROS2
+## Configuração do ROS2
 
 Instale os pacotes ROS2 necessários:
 
@@ -99,7 +99,7 @@ sudo apt update
 sudo apt install ros-foxy-desktop
 ```
 
-# Pacotes para ZED Mini:
+## Pacotes para ZED Mini:
 
 Instale o SDK da ZED Mini e o wrapper para ROS2:
 
@@ -109,11 +109,11 @@ chmod +x zedsdk_3.5.0_jp45_jetson.run
 ./zedsdk_3.5.0_jp45_jetson.run
 ```
 
-# Conectar o UM7 e RTK Emlid:
+## Conectar o UM7 e RTK Emlid:
 
 Certifique-se de que o UM7 e o RTK Emlid estão devidamente conectados e que os drivers estão configurados.
 
-# Execução
+## Execução
 
 1. Inicie o ROS2 e configure os nodes necessários:
 
@@ -136,7 +136,7 @@ Certifique-se de que o UM7 e o RTK Emlid estão devidamente conectados e que os 
     ros2 launch emlid_rtk_driver rtk.launch.py
     ```
 
-# SLAM e Planejamento de Trajetória
+## SLAM e Planejamento de Trajetória
 
 Para navegação autônoma, usamos algoritmos de SLAM (Simultaneous Localization and Mapping) para mapear o ambiente e localizar o drone no espaço.
 
@@ -149,7 +149,7 @@ Os principais pacotes usados são:
 - `rtabmap_ros` para SLAM.
 - `move_base` para planejamento de caminho.
 
-# Contribuições
+## Contribuições
 
 Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork deste repositório e submeter pull requests com melhorias ou correções.
 
@@ -160,6 +160,6 @@ Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork deste re
 5. Envie para o branch (`git push origin feature/MinhaFeature`).
 6. Crie um Pull Request.
 
-# Licença
+## Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
