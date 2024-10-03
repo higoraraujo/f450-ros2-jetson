@@ -67,8 +67,51 @@ Antes de começar, certifique-se de que você atendeu aos seguintes requisitos:
 
 Para rodar o ROS2, PX4 e os pacotes necessários dentro de um container Docker, siga os passos abaixo:
 
-1. **Clone o repositório PX4 no seu ambiente**:
+# Usando a imagem oficial do Jetson Xavier
+FROM nvcr.io/nvidia/l4t-base:r35.1.0
 
-   ```bash
-   git clone https://github.com/PX4/PX4-Autopilot.git
-   cd PX4-Autopilot
+# Instalar dependências do ROS 2
+RUN apt-get update && apt-get install -y \
+    curl \
+    gnupg2 \
+    lsb-release \
+    software-properties-common \
+    build-essential \
+    cmake \
+    git \
+    python3-pip
+
+# Instalar ROS 2 Humble Hawksbill
+RUN locale-gen en_US en_US.UTF-8 \
+    && update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 \
+    && apt update && apt install -y locales
+
+# Adicionar o repositório do ROS 2
+RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add - \
+    && add-apt-repository http://packages.ros.org/ros2/ubuntu \
+    && apt update && apt install -y ros-humble-desktop
+
+# Configurar ambiente do ROS 2
+SHELL ["/bin/bash", "-c"]
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+
+# Instalar PX4
+RUN apt-get install -y python3-colcon-common-extensions
+RUN git clone https://github.com/PX4/PX4-Autopilot.git --recursive
+WORKDIR /PX4-Autopilot
+RUN DONT_RUN=1 make px4_sitl_default
+
+# Instalar pacotes da ZED Mini
+RUN apt-get install -y ros-humble-zed-ros2-wrapper
+
+# Instalar pacotes do UM7 Orientation Sensor
+RUN apt-get install -y ros-humble-um7
+
+# Instalar pacotes para RTK Emlid
+RUN apt-get install -y ros-humble-nmea-navsat-driver
+
+# Instalar pacotes da câmera RGB Logitech
+RUN apt-get install -y ros-humble-v4l2-camera
+
+# Configurar entrada de vídeo para a Logitech
+RUN apt-get
