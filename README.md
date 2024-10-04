@@ -4,14 +4,13 @@ Este repositório contém o código e as instruções para configurar e operar u
 
 <p align="center">
   <img src="./images/drone.png" alt="Drone F450" width="450">
-  <img src="./images/output.gif" alt="Timelapse Drone F450" width="300">
 </p>
 
 ## Demo do Projeto
 
 <p align="center">
   <a href="https://youtu.be/DD4cZKjU3OE?si=M-d3tPuX8iqx91zh&t=67">
-    <img src="https://img.youtube.com/vi/DD4cZKjU3OE/0.jpg" alt="Assista ao vídeo no YouTube" width="400">
+    <img src="./images/output.gif" alt="Assista ao vídeo no YouTube" width="400">
   </a>
 </p>
 
