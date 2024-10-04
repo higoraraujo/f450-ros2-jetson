@@ -3,7 +3,7 @@
 Este repositório contém o código e as instruções para configurar e operar um **Drone F450** equipado com **PX4**, **ROS2**, **Jetson Xavier**, **ZED Mini**, **UM7 Inertial** e **RTK Emlid** para realizar **missões autônomas** com **planejamento de trajetória (Path Planning)**. Utilizamos algoritmos de **SLAM** para navegação e mapeamento.
 
 <p align="center">
-  <img src="./images/dronespecs.png" alt="Drone F450" width="450">
+  <img src="./images/dronedis.png" alt="Drone F450" width="450">
 </p>
 
 ## Demo do Projeto
