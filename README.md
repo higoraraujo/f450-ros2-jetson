@@ -11,6 +11,8 @@ Este repositório contém o código e as instruções para configurar e operar u
 <p align="center">
   <a href="https://youtu.be/DD4cZKjU3OE?si=M-d3tPuX8iqx91zh&t=67">
     <img src="./images/output.gif" alt="Assista ao vídeo no YouTube" width="400">
+  </a>
+  <a href="https://youtu.be/DD4cZKjU3OE?si=M-d3tPuX8iqx91zh&t=67">
     <img src="./images/f450action.gif" alt="Assista ao vídeo no YouTube" width="400">
   </a>
 </p>
