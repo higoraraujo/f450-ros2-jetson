@@ -4,6 +4,7 @@ Este repositório contém o código e as instruções para configurar e operar u
 
 <p align="center">
   <img src="./images/drone.png" alt="Drone F450" width="450">
+  <img src="./images/output.gif" alt="Timelapse Drone F450" width="450">
 </p>
 
 ## Demo do Projeto
