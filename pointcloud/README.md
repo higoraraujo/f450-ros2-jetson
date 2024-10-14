@@ -1,5 +1,5 @@
-# Usar uma imagem base do ROS2 Foxy com Docker
-FROM ros:foxy-ros-core
+# Usar uma imagem base do ROS2 Humble com Docker
+FROM ros:humble-ros-core
 
 # Instalar pacotes básicos e ferramentas de dependências
 RUN apt-get update && apt-get install -y \
@@ -10,11 +10,11 @@ RUN apt-get update && apt-get install -y \
     curl \
     wget \
     libopencv-dev \
-    ros-foxy-cv-bridge \
-    ros-foxy-message-filters \
-    ros-foxy-nav2-bringup \
-    ros-foxy-nmea-navsat-driver \
-    ros-foxy-um7 \
+    ros-humble-cv-bridge \
+    ros-humble-message-filters \
+    ros-humble-nav2-bringup \
+    ros-humble-nmea-navsat-driver \
+    ros-humble-um7 \
     && rm -rf /var/lib/apt/lists/*
 
 # Clonar e instalar PX4 ROS2 bridge
@@ -35,12 +35,4 @@ RUN git clone https://github.com/stereolabs/zed-ros2-wrapper.git ~/ros2_ws/src/z
 WORKDIR /root/ros2_ws
 
 # Fonte do ROS2 ao iniciar o contêiner
-ENTRYPOINT ["/bin/bash", "-c", "source /opt/ros/foxy/setup.bash && source install/setup.bash && bash"]
-
-
-B. Construir a Imagem Docker
-Com o Dockerfile pronto, você pode construir a imagem Docker que conterá todo o ambiente ROS2 com suporte ao PX4, ZED, IMU, e RTK.
-
-No diretório onde o Dockerfile está localizado, execute:
-
-docker build -t ros2_rumble_pointcloud .
+ENTRYPOINT ["/bin/bash", "-c", "source /opt/ros/humble/setup.bash && source install/setup.bash && bash"]
