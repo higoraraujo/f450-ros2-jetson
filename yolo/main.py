@@ -4,6 +4,8 @@ import cv2
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
 import numpy as np
+from ament_index_python.packages import get_package_share_directory
+import os
 
 class AlgaeDetectionNode(Node):
     def __init__(self):
@@ -16,11 +18,17 @@ class AlgaeDetectionNode(Node):
         self.bridge = CvBridge()
 
         # Carregando o YOLO
-        self.net = cv2.dnn.readNet('yolov3.weights', 'yolov3.cfg')
+        package_share_directory = get_package_share_directory('algae_detection_package')
+        weights_path = os.path.join(package_share_directory, 'yolo', 'yolov3.weights')
+        config_path = os.path.join(package_share_directory, 'yolo', 'yolov3.cfg')
+        names_path = os.path.join(package_share_directory, 'yolo', 'coco.names')
+        
+        self.net = cv2.dnn.readNet(weights_path, config_path)
         self.layer_names = self.net.getLayerNames()
         self.output_layers = [self.layer_names[i - 1] for i in self.net.getUnconnectedOutLayers()]
+        
         self.classes = []
-        with open('coco.names', 'r') as f:
+        with open(names_path, 'r') as f:
             self.classes = [line.strip() for line in f.readlines()]
 
     def image_callback(self, msg):
