@@ -120,7 +120,7 @@ chmod +x zedsdk_3.5.0_jp45_jetson.run
 
 Certifique-se de que o UM7 e o RTK Emlid estão devidamente conectados e que os drivers estão configurados.
 
-### Execução
+## **Execução**
 
 1. Inicie o ROS2 e configure os nodes necessários:
 
@@ -143,7 +143,7 @@ Certifique-se de que o UM7 e o RTK Emlid estão devidamente conectados e que os 
     ros2 launch emlid_rtk_driver rtk.launch.py
     ```
 
-### SLAM e Planejamento de Trajetória
+## **SLAM e Planejamento de Trajetória**
 
 Para navegação autônoma, usamos algoritmos de SLAM (Simultaneous Localization and Mapping) para mapear o ambiente e localizar o drone no espaço.
 
@@ -153,10 +153,10 @@ Para navegação autônoma, usamos algoritmos de SLAM (Simultaneous Localization
 
 Os principais pacotes usados são:
 
-- `rtabmap_ros` para SLAM.
-- `move_base` para planejamento de caminho.
+- rtabmap_ros para SLAM.
+- move_base para planejamento de caminho.
 
-### Contribuições
+## **Contribuições**
 
 Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork deste repositório e submeter pull requests com melhorias ou correções.
 
@@ -167,6 +167,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork deste re
 5. Envie para o branch (`git push origin feature/MinhaFeature`).
 6. Crie um Pull Request.
 
-## Licença
+## **Licença**
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
+
