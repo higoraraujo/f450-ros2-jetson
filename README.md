@@ -92,7 +92,7 @@ make px4_fmu-v5_default
 Configure o PX4 para comunicação com o ROS2. Certifique-se de que o MAVROS está configurado corretamente para se comunicar com o PX4:
 
 ```bash
-sudo apt install ros-foxy-mavros ros-foxy-mavros-extras
+sudo apt install ros-humble-mavros ros-humble-mavros-extras
 ```
 
 Configurar o drone no QGroundControl para iniciar as missões.
@@ -103,7 +103,7 @@ Instale os pacotes ROS2 necessários:
 
 ```bash
 sudo apt update
-sudo apt install ros-foxy-desktop
+sudo apt install ros-humble-desktop
 ```
 
 ### Pacotes para ZED Mini:
@@ -125,7 +125,7 @@ Certifique-se de que o UM7 e o RTK Emlid estão devidamente conectados e que os 
 1. Inicie o ROS2 e configure os nodes necessários:
 
     ```bash
-    source /opt/ros/foxy/setup.bash
+    source /opt/ros/humble/setup.bash
     ros2 launch px4_ros_com sensor_combined.launch.py
     ```
 
@@ -170,4 +170,3 @@ Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork deste re
 ## **Licença**
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
-
